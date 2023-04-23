@@ -18,9 +18,8 @@ pipeline {
 				}
 			}
 		}
-	}
+	
 
-        stages {
                 stage ('docker build'){
                         steps{
                                 sshagent ([credi]) {
@@ -33,9 +32,7 @@ pipeline {
                         }
                 }
         
-	}
 
-        stages {
                 stage ('docker run'){
                         steps{
                                 sshagent ([credi]) {
@@ -48,9 +45,6 @@ pipeline {
                         }
                 }
         
-	}
-
-        stages {
                 stage ('docker push'){
                         steps{
                                 sshagent ([credi]) {
