@@ -4,4 +4,4 @@ git add .
 
 git commit -m 'update-jen'
 
-git push origin main -force
+git push origin main --force
