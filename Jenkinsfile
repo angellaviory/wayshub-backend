@@ -18,7 +18,7 @@ pipeline {
 				}
 			}
 		}
-	}
+
         stages {
                 stage ('docker build'){
                         steps{
@@ -31,7 +31,7 @@ pipeline {
                                 }
                         }
                 }
-        }
+        
         stages {
                 stage ('docker run'){
                         steps{
@@ -44,7 +44,7 @@ pipeline {
                                 }
                         }
                 }
-        }
+        
         stages {
                 stage ('docker push'){
                         steps{
